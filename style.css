@@ -1,0 +1,250 @@
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #222;
+}
+
+/* NAVIGATION BAR */
+header {
+    background-color: #24243e;
+    padding: 18px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a99cff;
+}
+
+#themeBtn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HOME SECTION */
+.home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #5145bd, #887cf0);
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.home-content h2 {
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    margin-bottom: 25px;
+}
+
+.profile img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #5145bd;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home .btn {
+    background-color: white;
+    color: #5145bd;
+}
+
+/* ALL SECTIONS */
+section:not(.home) {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h1 {
+    color: #5145bd;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* CARDS */
+.card {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 650px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #5145bd;
+    margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skill {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.progress {
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress div {
+    height: 100%;
+    background-color: #6558d3;
+    border-radius: 10px;
+}
+
+/* CONTACT FORM */
+form {
+    max-width: 550px;
+    margin: 25px auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-info {
+    line-height: 2;
+}
+
+/* FOOTER */
+footer {
+    background-color: #24243e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* DARK MODE */
+body.dark {
+    background-color: #171727;
+    color: white;
+}
+
+body.dark section:not(.home) {
+    background-color: #171727;
+}
+
+body.dark .card {
+    background-color: #292941;
+    color: white;
+}
+
+body.dark section h1,
+body.dark .card h3 {
+    color: #a99cff;
+}
+
+body.dark input,
+body.dark textarea {
+    background-color: #292941;
+    color: white;
+    border-color: #555;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+        padding: 45px 20px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .profile img {
+        width: 170px;
+        height: 170px;
+    }
+
+    section:not(.home) {
+        padding: 45px 6%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+}
