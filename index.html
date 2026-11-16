@@ -8,214 +8,174 @@
 </head>
 
 <body>
-
 <!-- NAVIGATION BAR -->
-<header>
+<header class="header">
+    <div class="logo">My<Span>Portfolio</Span></div>
     <nav class="navbar">
-        <h2 class="logo">My Portfolio</h2>
-
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <button id="themeBtn">🌙</button>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+        <button>Hire Me</button>
     </nav>
 </header>
+<main id="home">
+    <!-- HOME SECTION -->
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm  DIKSHA DIKSHA</h1>
+            <h2>First Year Computer Science Student</h2>
+            <p>Welcome to my personal portfolio website.</p>
+            <button>View My Work</button>
+        </div>
+        <div class="profile">
+            <img src="images/my portfolio.jpeg" alt="My Portfolio" width="300">
+        </div>
+        <div class="projects">
+            <h2>Creative</h2>
+            <p>Design|Develop|Create</p>
+        </div>
+    </section>
 
-<!-- HOME SECTION -->
-<section id="home" class="home">
-    <div class="home-content">
-        <h1>Hi, I'm DIKSHA</h1>
-        <h2>First Year Computer Science Student</h2>
-        <p>Welcome to my personal portfolio website.</p>
-        <a href="#about" class="btn">Explore More</a>
-    </div>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="About me">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a passionate student interested in
+                programming, web development and technology.
+                I enjoy learning new things and creating websites.
+            <p>
+        </div>
+        <div class="card">
+            <h3>My Interests</h3>
+            <p>Web Development, Coding, Designing and Technology.</p>
+        </div>
 
-    <div class="profile">
-        <img src="images/my portfolio.jpeg" alt="My Portfolio" width="300">
-    </div>
-</section>
+        <div class="card">
+            <h3>My Goals</h3>
+            <p>To become a successful software developer.</p>
+        </div>
+    </section>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h1>My Skills</h1>
 
-<!-- ABOUT SECTION -->
-<section id="about">
-    <h1>About Me</h1>
-    <p>
-        Hello! I am a passionate student interested in
-        programming, web development and technology.
-        I enjoy learning new things and creating websites.
-    </p>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress">
+                <div style="width:90%"></div>
+            </div>
+        </div>
 
-    <div class="card">
-        <h3>My Interests</h3>
-        <p>Web Development, Coding, Designing and Technology.</p>
-    </div>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress">
+                <div style="width:80%"></div>
+            </div>
+        </div>
 
-    <div class="card">
-        <h3>My Goals</h3>
-        <p>To become a successful software developer.</p>
-    </div>
-</section>
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress">
+                <div style="width:60%"></div>
+            </div>
+        </div>
 
-<!-- EDUCATION SECTION -->
-<section id="education">
-    <h1>My Education</h1>
+        <div class="skill">
+            <p>Communication</p>
+            <div class="progress">
+                <div style="width:85%"></div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>College / University</h3>
-        <p>Course: Computer Science</p>
-        <p>Year: 2026 - Present</p>
-    </div>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h1>My Projects</h1>
 
-    <div class="card">
-        <h3>Higher Secondary School</h3>
-        <p>School Name: Your School Name</p>
-        <p>Year: 2024 - 2026</p>
-    </div>
-</section>
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>A personal website created using HTML and CSS.</p>
+            <p>Technologies: HTML, CSS, JavaScript</p>
+            <button>View My Work</button>
+        </div>
+        <div class="card">
+            <h3>Student Management Project</h3>
+            <p>A simple project to manage student information.</p>
+            <p>Technologies: HTML, CSS</p>
+            <button>View Details</button>
+        </div>
+    </section>
 
-<!-- SKILLS SECTION -->
-<section id="skills">
-    <h1>My Skills</h1>
+    <!-- HOBBIES SECTION -->
+    <section id="hobbies">
+        <h1>Hobbies & Interests</h1>
 
-    <div class="skill">
-        <p>HTML</p>
-        <div class="progress">
-            <div style="width:90%"></div>
+        <div class="card">
+            <h3>📚 Reading</h3>
+            <p>I enjoy reading books and learning new things.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎵 Music</h3>
+            <p>I enjoy listening to music during free time.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Coding</h3>
+            <p>I love learning programming and developing websites.</p>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements">
+        <h1>My Achievements</h1>
+
+        <div class="card">
+            <h3>Certificates</h3>
+            <p>Completed technical workshops and courses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Competition</h3>
+            <p>Participated in technical competitions and events.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>my contact</h1>
+        <p>xyz0000023</p>
+    </section>
+</main>
+<footer class="footer-container">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h2>My<span>Portfolio</span></h2>
+            <p>Creating modern designs and building creative digital experencies.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home" >Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Me </h3>
+            <p> Email: diya@xyzgmail.com</p>
+            <p>Location: India</P>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Me</h3>
+            <a href="https://www.linkedin.com/">Linkedin</a>
+        </div>
+        <div class="copyright">
+            <p>@ 2026 My Porifolio | All Rights Reserved</P>
         </div>
     </div>
-
-    <div class="skill">
-        <p>CSS</p>
-        <div class="progress">
-            <div style="width:80%"></div>
-        </div>
-    </div>
-
-    <div class="skill">
-        <p>JavaScript</p>
-        <div class="progress">
-            <div style="width:60%"></div>
-        </div>
-    </div>
-
-    <div class="skill">
-        <p>Communication</p>
-        <div class="progress">
-            <div style="width:85%"></div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS SECTION -->
-<section id="projects">
-    <h1>My Projects</h1>
-
-    <div class="card">
-        <h3>Personal Portfolio Website</h3>
-        <p>A personal website created using HTML and CSS.</p>
-        <p>Technologies: HTML, CSS, JavaScript</p>
-        <a href="#contact" class="btn">View Details</a>
-    </div>
-
-    <div class="card">
-        <h3>Student Management Project</h3>
-        <p>A simple project to manage student information.</p>
-        <p>Technologies: HTML, CSS</p>
-        <a href="#contact" class="btn">View Details</a>
-    </div>
-</section>
-
-<!-- HOBBIES SECTION -->
-<section id="hobbies">
-    <h1>Hobbies & Interests</h1>
-
-    <div class="card">
-        <h3>📚 Reading</h3>
-        <p>I enjoy reading books and learning new things.</p>
-    </div>
-
-    <div class="card">
-        <h3>🎵 Music</h3>
-        <p>I enjoy listening to music during free time.</p>
-    </div>
-
-    <div class="card">
-        <h3>💻 Coding</h3>
-        <p>I love learning programming and developing websites.</p>
-    </div>
-</section>
-
-<!-- ACHIEVEMENTS SECTION -->
-<section id="achievements">
-    <h1>My Achievements</h1>
-
-    <div class="card">
-        <h3>Certificates</h3>
-        <p>Completed technical workshops and courses.</p>
-    </div>
-
-    <div class="card">
-        <h3>Competition</h3>
-        <p>Participated in technical competitions and events.</p>
-    </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact">
-    <h1>Contact Me</h1>
-
-    <div class="contact-info">
-        <p>Email: yourname@gmail.com</p>
-        <p>GitHub: github.com/yourusername</p>
-        <p>LinkedIn: linkedin.com/in/yourusername</p>
-    </div>
-
-    <form id="contactForm">
-        <input type="text" placeholder="Enter Your Name" required>
-
-        <input type="email" placeholder="Enter Your Email" required>
-
-        <textarea placeholder="Enter Your Message" required></textarea>
-
-        <button type="submit" class="btn">Send Message</button>
-        <p id="status"></p>
-    </form>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <p>©️ 2026 My Personal Portfolio | All Rights Reserved</p>
 </footer>
-
-<script>
-    // Dark and Light Mode
-    const themeBtn = document.getElementById("themeBtn");
-
-    themeBtn.addEventListener("click", function() {
-        document.body.classList.toggle("dark");
-
-        themeBtn.textContent =
-            document.body.classList.contains("dark") ? "☀️" : "🌙";
-    });
-
-    // Contact Form Validation
-    document.getElementById("contactForm")
-        .addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            document.getElementById("status").textContent =
-                "Thank you! Your form has been submitted successfully.";
-
-            this.reset();
-        });
-</script>
-
 </body>
 </html>

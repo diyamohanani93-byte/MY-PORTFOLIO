@@ -1,110 +1,99 @@
-/* GENERAL STYLING */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
-
+html {
+    scroll-behaviour: smooth;
+}
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #222;
+    background-color: #f5f3ff;
 }
-
 /* NAVIGATION BAR */
 header {
-    background-color: #24243e;
-    padding: 18px 4%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.navbar {
+    background-color: #17152e;
+    padding: 20px 7%;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
-
 .logo {
-    color: white;
-    font-size: 24px;
+    font-size: 27px;
+    font-weight: bold;
 }
+.logo span,
+.footer-about span {
+    color: #c084fc;
 
-.nav-links {
+}
+.navbar {
     display: flex;
-    list-style: none;
-    gap: 18px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-
-.nav-links a {
-    text-decoration: none;
+.navbar a {
     color: white;
-    font-size: 14px;
+    text-decoration: none;
+    font-size: 16px;
     transition: 0.3s;
 }
-
-.nav-links a:hover {
-    color: #a99cff;
+.navbar a:hover {
+    color: #c084fc;
 }
-
-#themeBtn {
-    padding: 8px 12px;
-    border: none;
+.btn {
+    background: linear-gradient(45deg,#9333ea, #c084fc);
+    color: white;
+    padding: 12px 25px;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #9333ea66;
 }
 
 /* HOME SECTION */
 .home {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    background: linear-gradient(135deg, #5145bd, #887cf0);
-    color: white;
+    padding: 70px;
+    background:  linear-gradient(120deg, #ede9fe, #f5f3ff,#ddd6fe);
+    gap: 40px;
 }
-
+.home-content {
+    flex: 1 1 300px;
+}
 .home-content h1 {
     font-size: 45px;
+    color: #17152e;
     margin-bottom: 15px;
 }
-
+.home-content h1 span {
+    color: #9333ea;
+}
 .home-content h2 {
+    color: #6b21a8;
     margin-bottom: 15px;
 }
-
 .home-content p {
+    line-height: 1.7;
     margin-bottom: 25px;
 }
-
-.profile img {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
+.profile {
+    width: 310px;
+    height: 533px;
     object-fit: cover;
-    border: 5px solid white;
+    border:5px solid brown;
 }
-
-.btn {
-    display: inline-block;
-    background-color: #5145bd;
-    color: white;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.home .btn {
-    background-color: white;
-    color: #5145bd;
-}
-
 /* ALL SECTIONS */
 section:not(.home) {
     padding: 65px 10%;
@@ -112,7 +101,7 @@ section:not(.home) {
 }
 
 section h1 {
-    color: #5145bd;
+    color: #1E6F70;
     font-size: 32px;
     margin-bottom: 25px;
 }
@@ -124,11 +113,11 @@ section h1 {
     margin: 20px auto;
     max-width: 650px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(16,29,44,0.08);
 }
 
 .card h3 {
-    color: #5145bd;
+    color: #1E6F70;
     margin-bottom: 10px;
 }
 
@@ -148,103 +137,97 @@ section h1 {
 
 .progress div {
     height: 100%;
-    background-color: #6558d3;
+    background-color: #DDD9CF;
     border-radius: 10px;
 }
-
-/* CONTACT FORM */
-form {
-    max-width: 550px;
-    margin: 25px auto;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-}
-
-textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-.contact-info {
-    line-height: 2;
-}
-
 /* FOOTER */
 footer {
     background-color: #24243e;
-    color: white;
+    color: #F4F1EA;
     text-align: center;
     padding: 20px;
 }
-
-/* DARK MODE */
-body.dark {
-    background-color: #171727;
-    color: white;
+.footer h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1 1 180px;
+}
+.footer h3 {
+    color: #c084fc;
+    margin-bottom: 18px;
+}
+.footer-about p {
+    line-height: 1.7;
+    margin-top: 15px;
+    color: #d1d5db;
 }
 
-body.dark section:not(.home) {
-    background-color: #171727;
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-body.dark .card {
-    background-color: #292941;
-    color: white;
+.footer-links a,
+.footer-social a {
+    text-decoration: none;
+    color: #d1d5db;
+    transition: 0.3s;
 }
 
-body.dark section h1,
-body.dark .card h3 {
-    color: #a99cff;
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #c084fc;
+    padding-left: 5px;
 }
 
-body.dark input,
-body.dark textarea {
-    background-color: #292941;
-    color: white;
-    border-color: #555;
+.footer-contact p {
+    margin-bottom: 12px;
+    color: #d1d5db;
 }
+.copyright {
+    border-top: 1px solid #49445f;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #c4b5fd;
+}
+@media (max-width: 768px) {
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 900px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-links {
+    .header {
         justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 600px) {
-    .home {
         flex-direction: column;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
         text-align: center;
-        gap: 35px;
-        padding: 45px 20px;
+        justify-content: center;
     }
 
-    .home-content h1 {
-        font-size: 32px;
+    .hero-content h1 {
+        font-size: 35px;
     }
 
-    .profile img {
-        width: 170px;
-        height: 170px;
+    .hero-box {
+        width: 100%;
     }
 
-    section:not(.home) {
-        padding: 45px 6%;
-    }
-
-    .nav-links {
-        gap: 12px;
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
